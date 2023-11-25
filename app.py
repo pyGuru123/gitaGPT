@@ -34,7 +34,7 @@ if "messages" not in st.session_state.keys():
     st.session_state.messages = [{"role": "assistant", "content": "How may I assist you today?"}]
 
 # Display or clear chat messages
-if len(st.session.messages) == 1:
+if len(st.session_state.messages) == 1:
     for message in st.session_state.messages:
         with st.chat_message(message["role"]):
             st.write(message["content"])
