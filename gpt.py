@@ -2,12 +2,12 @@ import os
 import time
 import asyncio
 from openai import OpenAI
-# from dotenv import load_dotenv
+from dotenv import load_dotenv
 
-# load_dotenv()
+load_dotenv()
 API_KEY = os.getenv("API_KEY")
 ASSISTANT_ID = os.getenv("ASSISTANT_ID")
-THREAD_ID = os.getenv("THREAD_ID")
+THREAD_ID = "thread_gte9ibTIPA8lI93f6U3iw9UT"
 
 client = OpenAI(api_key=API_KEY)
 
